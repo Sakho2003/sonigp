@@ -1,5 +1,14 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# Route for the home page
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+# Route for the registration page
+registration:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+
+# Route for the login page
+login:
+    path: /login
+    controller: App\Controller\LoginController::login
